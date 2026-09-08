@@ -70,14 +70,14 @@ The rendering architecture deliberately separates **game simulation**, **world r
 
 ```text
 ┌─────────────────────────────────────────────────────────────────┐
-│                        GAME SIMULATION                           │
+│                        GAME SIMULATION                          │
 │          ECS • Physics • AI • Systems • State • RNG             │
 └───────────────────────────────┬─────────────────────────────────┘
                                 │
                                 ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                    CANVAS2D WORLD RENDERER                      │
-│                         640 × 400                                │
+│                         640 × 400                               │
 │                                                                 │
 │  Backgrounds • Shafts • Platforms • Hazards • Furniture         │
 │  Terminals • Robots • Particles • Agent                         │
@@ -93,7 +93,7 @@ The rendering architecture deliberately separates **game simulation**, **world r
                                 │
                                 ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                         DOM UI LAYER                             │
+│                         DOM UI LAYER                            │
 │                                                                 │
 │  HUD • Minimap • Notifications • Puzzle / Simon Interface       │
 │  CRT Bezel / Presentation Wrapper                               │
@@ -224,16 +224,16 @@ Audio is implemented directly on the Web Audio API and organized into dedicated 
 ```text
                          AUDIO ENGINE
                               │
-              ┌───────────────┼───────────────┐
-              │               │               │
-              ▼               ▼               ▼
-           MUSIC             SFX            VOICE
-              │               │               │
-              │               ├─ Spatial Pan │
-              │               ├─ Reverb      ├─ Speech
-              │               └─ Room IR     │  Synthesis
-              │
-              └─ 55 Hz + 58.5 Hz beating drone
+              ┌───────────────┼──────────────────┐
+              │               │                  │
+              ▼               ▼                  ▼
+           MUSIC             SFX               VOICE
+              │               │                  │
+              │               ├─ Spatial Pan     │
+              │               ├─ Reverb          ├─ Speech
+              │               └─ Room IR         │  Synthesis
+              │                                  │
+              └─ 55 Hz + 58.5 Hz beating drone ──
 ```
 
 ### Audio Features
