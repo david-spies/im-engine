@@ -5,8 +5,6 @@
 <br/>
 <br/>
 
-<div align="center">
-
 # Impossible Mission: Agent 4125
 
 ### Engine v2.0
