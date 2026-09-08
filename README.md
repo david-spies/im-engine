@@ -5,14 +5,6 @@
 <br/>
 <br/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Engine-v2.0-blueviolet?style=for-the-badge&logo=javascript" alt="Engine Version">
-  <img src="https://img.shields.io/badge/Target-60%20FPS-success?style=for-the-badge&logo=opengl" alt="Target FPS">
-  <img src="https://img.shields.io/badge/Architecture-ECS%20%2B%20Two--Canvas-orange?style=for-the-badge" alt="Architecture">
-  <img src="https://img.shields.io/badge/Tests-3061%20Assertions-informational?style=for-the-badge&logo=mocha" alt="Tests">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License">
-</p>
-
 <div align="center">
 
 # Impossible Mission: Agent 4125
@@ -112,7 +104,7 @@ The rendering architecture deliberately separates **game simulation**, **world r
 
 ### CRT Effects
 
-The WebGL2 post-processing stage applies the following visual treatments:
+The WebGL2 post-processing stage applies:
 
 - **Barrel distortion:** `strength = 0.12`
 - **Chromatic aberration:** `offset = 0.006`
@@ -120,8 +112,6 @@ The WebGL2 post-processing stage applies the following visual treatments:
 - **Scanlines**
 - **Phosphor flicker:** approximately `4%` noise
 - **Vignette shading**
-
-The result is a deliberately stylized CRT presentation while retaining a deterministic, low-resolution logical game surface.
 
 ---
 
@@ -170,7 +160,7 @@ The engine includes:
 
 Swept AABB prevents high-speed entities from tunneling through thin collision surfaces.
 
-The quadtree provides efficient spatial queries for tasks such as:
+The quadtree provides efficient spatial queries for:
 
 - Robot proximity detection
 - Hazard queries
@@ -244,7 +234,7 @@ Audio is implemented directly on the Web Audio API and organized into dedicated 
               │               ├─ Spatial Pan │
               │               ├─ Reverb      ├─ Speech
               │               └─ Room IR     │  Synthesis
-              │                              
+              │
               └─ 55 Hz + 58.5 Hz beating drone
 ```
 
@@ -261,7 +251,7 @@ Audio is implemented directly on the Web Audio API and organized into dedicated 
 
 ## 📂 Project Structure
 
-> The directory tree below is intentionally kept inside a fenced code block so GitHub renders the hierarchy with fixed-width alignment.
+> The directory tree is kept inside a fenced code block so GitHub renders the hierarchy with fixed-width alignment.
 
 ```text
 im-engine/
