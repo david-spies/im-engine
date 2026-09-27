@@ -233,7 +233,7 @@ Audio is implemented directly on the Web Audio API and organized into dedicated 
               │               ├─ Reverb          ├─ Speech
               │               └─ Room IR         │  Synthesis
               │                                  │
-              └─ 55 Hz + 58.5 Hz beating drone ──
+              └─ 55 Hz + 58.5 Hz beating drone ──┘
 ```
 
 ### Audio Features
